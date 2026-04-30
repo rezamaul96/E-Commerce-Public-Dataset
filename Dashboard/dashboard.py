@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # ─── LOAD DATA ───────────────────────────────────────────────────────────────
-BASE_DIR = os.path.dirname(__file__)
+BASE_DIR = os.path.join(os.path.dirname(__file__), '..', 'Data')
 
 @st.cache_data
 def load_all_data():
